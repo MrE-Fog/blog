@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# メディアファイル
+*.png
+*.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.AVI
