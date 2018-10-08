@@ -1,12 +1,6 @@
 # Name
 
-driving-position-estimation use-optical-flow conf (python ver.)
-
-# Overview
-
-This repo include contents to check action of driving-position-estimation use-optical-flow (python ver. / private) .
-
-このレポジトリは，driving-position-estimation use-optical-flow (python ver. / private) の動作確認に必要なコンテンツが含まれています．
+[20180628_OpenCV × Python × オプティカルフロー (Optical Flow) で物体追跡](https://kuri-megane.hatenablog.jp/entry/2018/06/28/100000) のサンプルコード
 
 # Requirement
 
@@ -21,17 +15,20 @@ The directory structure of the program is as follows.
 
 ```
 self-position-estimation- conf
-├── LICENSE
-├── README.md
-├── environment_ubuntu.yml  (conda environment file)
-├── rectangle.png  (sample image)
-└── test_cv2.py (sample OpenCV program)
-
+├── 20180628_OpenCV × Python × オプティカルフロー (Optical Flow) で物体追跡.md
+├── README.md (このファイル/This file)
+├── debug.avi (サンプル動画/sample video)
+├── environment_ubuntu.yml (conda environment file)
+├── result.png (サンプル画像/sample image)
+├── sample_object_tracking.py
+└── test_video_capture.py
 ```
 
 # Install
 
 ## install anaconda
+
+ex. (例)
 
 ```bash
 $ wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
@@ -61,5 +58,4 @@ If you need more information, please reade https://conda.io/docs/index.html ．
 
 # Version
 
-- 2017/09/03 shishito megane edit
-- 2018/07/04 shishito megane edit
+- 2018/10/09 kuri megane edit
