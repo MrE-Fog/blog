@@ -4,11 +4,11 @@
 
 2018年9月19日~20日に行われた [Google Cloud Next in Tokyo '18](https://cloud.withgoogle.com/next18/tokyo) についてざっくり，本当に非常にざっくりとまとめています．
 
-記事は主にスライドをディジタルカメラで撮影した写真をもとに紹介します．
-Google Cloud Platform (GCP) に関する知識はほとんどなく，間違いがあるかもしれません．
-その際にはコメントいただければと思います．
 
-## ざっくりまとめると...
+
+---
+
+<b>ざっくりまとめると...</b>
 
 2日間の基調講演で新しく発表されたのは次の4点でした．
 
@@ -17,16 +17,31 @@ Google Cloud Platform (GCP) に関する知識はほとんどなく，間違い�
 * 新機能とアップデート「Cloud Memorystore for Redis 」，「Container Registry 脆弱性スキャン」，「Cloud Source Repositories」を発表(基調講演2日目)
 * 日本電気株式会社，NECネッツエスアイ株式会社がサービスパートナーに(基調講演2日目)
 
-記事は非常に長いですので，次の目次から見たい部分に飛ばれることをおすすめします．
+
 
 ---
+
+<b>目次</b>
 
 [:contents]
 
 ---
 
 
-## 1日目
+
+<!-- more -->
+
+
+
+記事は非常に長いですので，目次から見たい部分に飛ばれることをおすすめします．
+
+記事は主にスライドをディジタルカメラで撮影した写真をもとに紹介します．
+Google Cloud Platform (GCP) に関する知識はほとんどなく，間違いがあるかもしれません．
+その際にはコメントいただければと思います．
+
+---
+
+# 1日目
 
 ### 基調講演 " Bringing the Cloud to You "
 
@@ -85,7 +100,7 @@ BigQuery，BigTable を導入することで膨大なデータでも素早い分
 
 ---
 
-### GCP で支えるエネルギーデータ活用の新ビジネス、住宅向け IoT サービス基盤 "エナジーゲートウェイ" (1日目ブレイクアウトセクション)
+### GCP で支えるエネルギーデータ活用の新ビジネス、住宅向け IoT サービス基盤 "エナジーゲートウェイ"
 
 [f:id:kuri_megane:20180923005331j:plain]
 
@@ -115,7 +130,7 @@ KeyにMACアドレスを採用しているそうですが，MACアドレスは�
 
 ---
 
-## Google Home アプリをサーバーレスで実現 ! ピカチュウトーク開発の裏側をご紹介 (1日目ブレイクアウトセクション)
+### Google Home アプリをサーバーレスで実現 ! ピカチュウトーク開発の裏側をご紹介
 
 [f:id:kuri_megane:20180923005715j:plain]
 
@@ -143,7 +158,7 @@ Dialog Flow などを使うことで，サーバを用意せずに運用する�
 ---
 
 
-## 専門知識なしで、TensorFlow と深層強化学習を学ぼう (1日目ブレイクアウトセクション)
+### 専門知識なしで、TensorFlow と深層強化学習を学ぼう
 
 [f:id:kuri_megane:20180923010007j:plain]
 
@@ -210,7 +225,7 @@ AlphaGo は一般ニュースでも大きく取り上げられ，記憶に新し
 
 # 2日目
 
-## 基調講演 " Bringing the Cloud to You "
+### 基調講演 " Bringing the Cloud to You "
 
 cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sessions/session/229874)
 
@@ -291,7 +306,7 @@ GCPの新機能とアップデートとして「Cloud Memorystore for Redis 」�
 ---
 
 
-## Firebase 入門、低コストで迅速な開発を行うには？ (2日目ブレイクアウトセクション)
+### Firebase 入門、低コストで迅速な開発を行うには？
 
 [f:id:kuri_megane:20180923013356j:plain]
 
@@ -299,10 +314,57 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 
 このセクションでは，株式会社みんコレの神楽坂氏からFirebaseが紹介されました．
 
+写真を撮り忘れてしまったため，メモ書きを載せます．
+
+##### 概要
+
+###### 不向き
+
+- アクションゲーム
+- 業務系や研究系の分析ツール ( -> BigQuery+機械学習にインポートができるようになったのでやりやすくはなった )
+
+###### 向いているもの
+
+- チャット
+- SNS
+- 戦略ゲームなどのアクション性の低いもの
+- 個人管理ツール(ToDoListとか，ソーシャル性があるとなお)
+- メディアアプリ，テキストではないものでも向いている
+
+
+##### 活用事例
+
+- Evernote
+- クックパッド
+- 某全国放送テレビ局
+- TED
+- トリバゴ
+
+##### 技術背景
+
+- Firebaseがあればサーバーレス MBaaS 
+- 公式サイト -> プロダクト(https://firebase.google.com/products/?hl=ja)
+
+- 開発系: db，認証，機械学習(MLKit)，サーバ側処理など
+- 保守系: エラー，性能監視，テスト
+- 改良系: 利用統計，予測，通知，ディープリンク(アプリの中の特定の画面に送るダイナミックリンク), A/Bテスト
+
+- 言語: -> 公式サイト「ドキュメント」
+- 金額: -> 公式サイト「料金」https://firebase.google.com/products/?hl=ja
+
+
+##### 開発系移行
+
+- DBのデータ構造の違いやセキュリティなどのルール設定に注意
+- 小・中規模なら一度に置き換え
+- 大規模なら徐々に
+    - クライアント主導かどうか，サーバ側でデータ移行が良いか
+    - ログイン連携周りはどうすべきか，各々で認証するのが良いか
+
 
 ---
 
-## Web API の育て方：駅すぱあと Web サービスでの Apigee 適用事例 (2日目ブレイクアウトセクション)
+### Web API の育て方：駅すぱあと Web サービスでの Apigee 適用事例
 
 [f:id:kuri_megane:20180923013726j:plain]
 
@@ -322,15 +384,17 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 
 
 いくつかの工夫が紹介されましたが，特に
-* APIの公開仕様は最初にしっかり検討する
-* 中核となる機能から公開する
-* 最初から全部自動化しようとしない
+
+- APIの公開仕様は最初にしっかり検討する
+- 中核となる機能から公開する
+- 最初から全部自動化しようとしない
+
 などが大事だと再認識しました．
 
 ---
 
 
-## Google Maps Platform が実現する新たな位置情報サービス体験 (2日目ブレイクアウトセクション)
+### Google Maps Platform が実現する新たな位置情報サービス体験
 
 [f:id:kuri_megane:20180923014518j:plain]
 
@@ -342,7 +406,7 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 
 ---
 
-## 画像認識 API と簡単にカスタム機械学習モデルを作成可能な "Cloud AutoML" (2日目ブレイクアウトセクション)
+### 画像認識 API と簡単にカスタム機械学習モデルを作成可能な "Cloud AutoML"
 
 [f:id:kuri_megane:20180923014824j:plain]
 
@@ -356,7 +420,7 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 ##### Cloud Vision API
 [f:id:kuri_megane:20180923014920j:plain]
 
-[f:id:kuri_megane:20180923014938j:plain][f:id:kuri_megane:20180923014942j:plain][f:id:kuri_megane:20180923014949j:plain][f:id:kuri_megane:20180923014959j:plain][f:id:kuri_megane:20180923015003j:plain]
+[f:id:kuri_megane:20180923014938j:plain][f:id:kuri_megane:20180923014942j:plain][f:id:kuri_megane:20180923014949j:plain][f:id:kuri_megane:20180923014959j:plain]
 
 ##### Cloud Video Intelligence
 [f:id:kuri_megane:20180923014954j:plain]
@@ -366,10 +430,12 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 [f:id:kuri_megane:20180923015010j:plain][f:id:kuri_megane:20180923015016j:plain][f:id:kuri_megane:20180923015025j:plain][f:id:kuri_megane:20180923015029j:plain][f:id:kuri_megane:20180923015035j:plain]
 
 質疑応答では，
-* ラベルは100まで，クラスは1000まで追加することができる
-* 将来的にはより多くのラベルとクラスの追加に対応すること
-* アップされた素材は，Googleや第三者が使用することはないこと
-* セグメンテーションは2019年対応予定であること
+
+- ラベルは100まで，クラスは1000まで追加することができる
+- 将来的にはより多くのラベルとクラスの追加に対応すること
+- アップされた素材は，Googleや第三者が使用することはないこと
+- セグメンテーションは2019年対応予定であること
+
 などが紹介されました．
 
 -----
@@ -383,7 +449,7 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 [f:id:kuri_megane:20180923015902j:plain][f:id:kuri_megane:20180923015757j:plain][f:id:kuri_megane:20180923015934j:plain][f:id:kuri_megane:20180923015950j:plain][f:id:kuri_megane:20180923020016j:plain][f:id:kuri_megane:20180923020028j:plain][f:id:kuri_megane:20180923020033j:plain]
 
 ##### その他
-[f:id:kuri_megane:20180923020151j:plain][f:id:kuri_megane:20180923020203j:plain][f:id:kuri_megane:20180923020217j:plain][f:id:kuri_megane:20180923020232j:plain]
+[f:id:kuri_megane:20180923020151j:plain][f:id:kuri_megane:20180923020203j:plain][f:id:kuri_megane:20180923020232j:plain]
 
 [f:id:kuri_megane:20180923020354j:plain][f:id:kuri_megane:20180923020418j:plain][f:id:kuri_megane:20180923020450j:plain][f:id:kuri_megane:20180923020529j:plain]
 
@@ -413,6 +479,8 @@ cf. [イベント公式ページ](https://cloud.withgoogle.com/next18/tokyo/sess
 
 ほとんど写真ばかりの長い記事になってしまいましたが，少しでもイベントの様子をお伝えすることができたらと思います．
 GCPが何の略かもわからない状態からの申し込みでしたが，様々な製品を駆使していきたいと考えています．
+
+
 来年のイベントに申し込む際には興味あるセクションを回れるよう，すぐにセクションの予約をしたいと思います．
 
 [f:id:kuri_megane:20180923021635j:plain]
