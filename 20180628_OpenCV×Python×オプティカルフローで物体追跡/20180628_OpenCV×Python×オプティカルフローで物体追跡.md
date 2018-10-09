@@ -33,15 +33,13 @@
 
 ## OpenCVの動作確認コード
 
-[https://github.com/kuri-megane/blog/blob/master/20180628_OpenCV%20%C3%97%20Python%20%C3%97%20%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%20(Optical%20Flow)%20%E3%81%A7%E7%89%A9%E4%BD%93%E8%BF%BD%E8%B7%A1/test_video_capture.py:embed:cite]
-
+[https://github.com/kuri-megane/blog/blob/master/20180628_OpenCV%C3%97Python%C3%97%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A7%E7%89%A9%E4%BD%93%E8%BF%BD%E8%B7%A1/test_video_capture.py:embed:cite]
 
 ## サンプル動画
 
 
 
-[https://github.com/kuri-megane/blog/blob/master/20180628_OpenCV%20%C3%97%20Python%20%C3%97%20%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%20(Optical%20Flow)%20%E3%81%A7%E7%89%A9%E4%BD%93%E8%BF%BD%E8%B7%A1/debug.avi:embed:cite]
-
+[https://github.com/kuri-megane/blog/blob/master/20180628_OpenCV%C3%97Python%C3%97%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A7%E7%89%A9%E4%BD%93%E8%BF%BD%E8%B7%A1/debug.avi:embed:cite]
 
 
 
@@ -315,8 +313,7 @@ result_img = cv2.add(frame, flow_layer)
 
 この記事で紹介しているソースコードはこちら
 
-
-[https://github.com/kuri-megane/blog/tree/master/20180628_OpenCV%20%C3%97%20Python%20%C3%97%20%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%20(Optical%20Flow)%20%E3%81%A7%E7%89%A9%E4%BD%93%E8%BF%BD%E8%B7%A1:embed:cite]
+[https://github.com/kuri-megane/blog/tree/master/20180628_OpenCV%C3%97Python%C3%97%E3%82%AA%E3%83%97%E3%83%86%E3%82%A3%E3%82%AB%E3%83%AB%E3%83%95%E3%83%AD%E3%83%BC%E3%81%A7%E7%89%A9%E4%BD%93%E8%BF%BD%E8%B7%A1:embed:cite]
 
 
 ## 更新履歴
