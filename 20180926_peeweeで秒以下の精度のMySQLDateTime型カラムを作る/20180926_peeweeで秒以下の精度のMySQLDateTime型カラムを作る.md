@@ -236,5 +236,5 @@ MariaDB [hoge]> select * from hoge_peewee;
 
 
 ## 本記事のソースコード
-[https://github.com/kuri-megane/blog/tree/master/20180926_peewee%20%E3%81%A7%20%E7%A7%92%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%B2%BE%E5%BA%A6%E3%81%AE%20MySQL%20DateTime%E5%9E%8B%20%E3%82%AB%E3%83%A9%E3%83%A0%E3%82%92%E4%BD%9C%E3%82%8B:embed:cite]
 
+[https://github.com/kuri-megane/blog/tree/master/20180926_peewee%E3%81%A7%E7%A7%92%E4%BB%A5%E4%B8%8B%E3%81%AE%E7%B2%BE%E5%BA%A6%E3%81%AEMySQLDateTime%E5%9E%8B%E3%82%AB%E3%83%A9%E3%83%A0%E3%82%92%E4%BD%9C%E3%82%8B:embed:cite]
