@@ -1,12 +1,29 @@
 # peeweeでJOINしたテーブルの値も取得する
 
+[f:id:kuri_megane:20180923170121p:plain]
+
 [peewee](http://docs.peewee-orm.com/en/latest/) とは python の [ORマッパー](https://qiita.com/yk-nakamura/items/acd071f16cda844579b9) のひとつです．
 
-## ざっくりまとめると
+---
+
+<b>ざっくりまとめると</b>
 
 - peeweeでjoinしたテーブルのカラムのデータを取得する方法
 - peewee 2.x の場合は ```naive()```
 - peewee 3.x の場合は ```objects()```
+
+---
+
+<b>目次</b>
+
+[:contents]
+
+---
+
+
+<!-- more -->
+
+
 
 ## テーブル定義
 
