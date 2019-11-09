@@ -7,6 +7,10 @@
 
 全く違う例ですが，どちらも連携させれば．．．
 
+# できあがるとこんな感じ
+
+[f:id:kuri_megane:20191023224144g:plain]
+
 # 連携への3つのステップ
 
 記事は3つに分かれています．
@@ -282,6 +286,9 @@ $ heroku logs --tail --app line2slack
 
 次は， [3. Slack -> LINE の連携](https://kuri-megane.hatenablog.jp/entry/2019/10/30/190000) を行います．
 
+また，画像を転送したい場合は， [4. LINE Bot で画像を取得 & Slack に画像を投稿 編](https://kuri-megane.hatenablog.jp/entry/2019/11/01/190000) を参考にしてください．
+
+さらに，スタンプが送信されたことを通知したい場合は， [5. LINEでスタンプが送信されたらSlackに流す 編](https://kuri-megane.hatenablog.jp/entry/2019/11/07/190000) を参考にしてください．
 
 # 参考記事
 

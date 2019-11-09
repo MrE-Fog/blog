@@ -7,13 +7,17 @@
 
 全く違う例ですが，どちらも連携させれば．．．
 
+# できあがるとこんな感じ
+
+[f:id:kuri_megane:20191023224144g:plain]
+
 # 連携への3つのステップ
 
 記事は3つに分かれています．
 
 1. アカウント準備編 <b>(本記事)</b>
-2. LINE -> Slack の連携編
-3. Slack -> LINE の連携編
+2. [LINE -> Slack の連携編](https://kuri-megane.hatenablog.jp/entry/2019/10/29/190000)
+3. [Slack -> LINE の連携編](https://kuri-megane.hatenablog.jp/entry/2019/10/30/190000)
 
 # 1. アカウント準備編 開発に必要なアカウントを用意する
 
@@ -202,5 +206,6 @@ $ heroku login
 
 # 最後に
 
-次は， 2. LINE -> Slack の連携を行います．
+次は， [2. LINE -> Slack の連携](https://kuri-megane.hatenablog.jp/entry/2019/10/29/190000) を行います．
 
+        

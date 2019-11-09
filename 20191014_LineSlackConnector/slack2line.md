@@ -7,6 +7,12 @@
 
 全く違う例ですが，どちらも連携させれば．．．
 
+# できあがるとこんな感じ
+
+[f:id:kuri_megane:20191023222615g:plain]
+
+
+
 # 連携への3つのステップ
 
 記事は3つに分かれています．
@@ -223,8 +229,8 @@ https://slack2line.herokuapp.com/ | https://git.heroku.com/slack2line.git
 
 $ git push heroku master
 $ heroku config:set LINE_CHANNEL_ACCESS_TOKEN=[LINE Bot のアクセストークン (ロングターム)] --app slack2line
-$ heroku config:set SLACK_API_TOKEN=[slack bots の Bot User OAuth Access Token] --app blog-slack2line
-$ heroku ps:scale pbot=1 --app blog-slack2line
+$ heroku config:set SLACK_API_TOKEN=[slack bots の Bot User OAuth Access Token] --app slack2line
+$ heroku ps:scale pbot=1 --app slack2line
 ```
 
 
