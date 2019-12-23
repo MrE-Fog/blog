@@ -255,7 +255,7 @@ reply [グループID or トークルームID] [メッセージ]
 うまく動かないときは，
 
 ```bash
-$ heroku logs --tail --app line2slack
+$ heroku logs --tail --app slack2line
 ```
 
 で確認してみてください．
